@@ -7,17 +7,17 @@ int main(void){
     
     int itemNum, unitPrice, month, day, year;
 
-    printf("Enter item number:\n ");
+    printf("Enter item number: ");
     scanf("%d", &itemNum);
 
-    printf("Enter unit price:\n ");
+    printf("Enter unit price: ");
     scanf("%d", &unitPrice);
 
-    printf("Enter purchase date (mm/dd/yyyy):\n ");
+    printf("Enter purchase date (mm/dd/yyyy): ");
     scanf("%d/%d/%d", &month, &day, &year);
 
     printf("Item\tUnit Price\tPurchase Date\n");
     printf("%d\t$%7.2d\t%.2d/%.2d/%.4d\n", itemNum, unitPrice, month, day, year);
 
-
+    return 0; //don't forget this!
 }
