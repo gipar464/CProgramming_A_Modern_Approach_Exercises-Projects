@@ -15,11 +15,15 @@ Assume that i, j, and k are int variables.
 (c) i = 7; j = 8; k = 9;
     printf("%d", (i + 10) % k / j);
 
+(d) i = 1; j = 2; k = 3;
+    printf("%d", (i + 5) % (j + 2) / k);
+
 
 Answers:
 (a) 1 2
 (b) 0
 (c) 1
+(d) 0
 
 */
 
@@ -29,11 +33,11 @@ Answers:
 int main(void){
     int i, j, k;
 
-    i = 7;
-    j = 8;
-    k = 9;
+    i = 1;
+    j = 2;
+    k = 3;
 
-    printf("%d", (i + 10) % k / j);
+    printf("%d", (i + 5) % (j + 2) / k);
 
     return 0;
 }
