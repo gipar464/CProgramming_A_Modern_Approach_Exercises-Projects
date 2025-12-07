@@ -10,3 +10,12 @@ note: you need to be in the same directory/folder as the file and exe for this t
 
 To debug, go to Terminal > Run Build Task. VSCode will automatically make a tasks.json to make
 things simpler for you. Now you can run and debug your code.
+
+
+Important Computer Science concepts:
+Terminal - Interface that displays input and output
+Shell - The software/program that handles commands inputed from the terminal and outputs
+        it on the same terminal
+Bash - Command interpreter and a type of shell
+Kernel - a computer program that always has complete control over all the hardware in the system
+         such as the CPU, memory, and devices
