@@ -9,7 +9,8 @@ note: you need to be in the same directory/folder as the file and exe for this t
 
 
 To debug, go to Terminal > Run Build Task. VSCode will automatically make a tasks.json to make
-things simpler for you. Now you can run and debug your code.
+things simpler for you. Now you can run and debug your code. 
+NOTE: YOU MUST HAVE THE MICROSOFT C/C++ EXTENSION IN VSCODE IN ORDER TO DEBUG THIS PROPERLY
 
 
 Important Computer Science concepts:
