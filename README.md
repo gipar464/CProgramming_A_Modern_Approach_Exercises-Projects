@@ -20,3 +20,4 @@ Shell - The software/program that handles commands inputed from the terminal and
 Bash - Command interpreter and a type of shell
 Kernel - a computer program that always has complete control over all the hardware in the system
          such as the CPU, memory, and devices
+float vs double - float is 32 bits, double is 64. use float for speed but less memory. use      double for accuracy 
