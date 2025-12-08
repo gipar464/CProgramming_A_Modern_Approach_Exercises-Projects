@@ -17,7 +17,7 @@ int main(void){
         printf("Invalid time. (Use 24-hour clock.)");
     }
 
-    printf("Equivalent 12-hour time: %d:%d", rHours, minutes);
+    printf("Equivalent 12-hour time: %d:%.2d", rHours, minutes);
 
 
     return 0;
