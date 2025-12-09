@@ -1,7 +1,7 @@
 /*
 Write a program that finds the largest and smallest
 out of 4 integers given by user. The minimum amount of if-statements needed
-to solve this problem is 4. I, however, only managed to do 5.
+to solve this problem is 3 apparently. I, however, only managed to do 5.
 */
 
 #include <stdio.h>
@@ -19,21 +19,21 @@ int main(void){
     min = u1;
     max = u2;
 
-    if(u1 < u2){
-        min = u1;
-        max = u2;
+    if(u1 > u2){
+        min = u2;
+        max = u1;
     }
-    if(u3 < min){
-       min = u3; 
+    if(min > u3){
+        min = u3;
     }
-    if(u4 < min){
+    if(min > u4){
         min = u4;
     }
-    if(u3 > max){
+    if(max < u3){
         max = u3;
     }
-    if(u4 > max){
-        max = u4; 
+    if(max < u4){
+        max = u4;
     }
 
     printf("Largest: %d\n", max);
