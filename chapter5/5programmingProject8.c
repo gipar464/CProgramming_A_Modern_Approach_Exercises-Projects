@@ -1,3 +1,11 @@
+/*
+Now, there is a way to fix the [PLACEHOLDER] in the printed results, but it's really messy
+and I don't like coding like that. I could either print the result in every single if statement
+or I could import the string library and use a string, but I haven't learned it thus far in
+chapter 5.
+
+*/
+
 #include <stdio.h>
 
 int main(void){
@@ -79,6 +87,9 @@ int main(void){
     printf("Closest deparure time is: %d:%.2d [PLACEHOLDER]," 
             "arriving at %d:%.2d [PLACEHOLDER]. \n",
             departureTimeHours, departureTimeMins, arrivalTimeHours, arrivalTimeMins);
+
+
+
     
     
 
