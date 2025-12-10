@@ -1,7 +1,7 @@
 /*
 Now, there is a way to fix the [PLACEHOLDER] in the printed results, but it's really messy
 and I don't like coding like that. I could either print the result in every single if statement
-or I could import the string library and use a string, but I haven't learned it thus far in
+or I could import the string library and use a string, but I haven't learned strings thus far in
 chapter 5.
 
 */
