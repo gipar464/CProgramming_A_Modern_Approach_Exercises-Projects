@@ -2,7 +2,6 @@
 
 int main(void){
     float n, max;
-    // max = n;
     do{
         printf("Enter a number: ");
         scanf("%f", &n);
