@@ -5,7 +5,7 @@ int main(void){
 
     printf("Enter a number: ");
     scanf("%d", &n);
-    j = 2;
+    j = 2; //equal to 2 because j can't be 0. see logic below 
     while(1){
         if(i > n){
             return 0;
