@@ -1,24 +1,22 @@
 #include <stdio.h>
 
 int main(void){
-    int a, b, gcd, temp;
+    int m, n, gcd, remainder;
 
     printf("Enter two integers: ");
-    scanf("%d %d", &a, &b);
+    scanf("%d %d", &m, &n);
 
-    if(b == 0){
-        gcd = b;
-    } else{
-
+    while(1){
+        if(n == 0){
+            gcd = m;
+            printf("Greatest common divisor: %d", gcd);
+            return 0;
+        } else{
+            remainder = m % n;
+            m = n;
+            n = remainder;
+        }
     }
-
-
-    printf("Greatest common divisor: %d", gcd);
 
     return 0;
 }
-
-
-//greatest common denominator calculator
-//use 22 and 4 as inputs
-//gcd of 22 and 4 is 2.
