@@ -11,20 +11,34 @@ int main(void){
     earliestYear = year;
 
     while(month != 0 && day != 0 && year != 0){
+
         if(earliestYear > year){
             earliestMonth = month;
             earliestDay = day;
             earliestYear = year;
+            if(earliestMonth > month){
+                earliestMonth = month;
+                earliestDay = day;
+                earliestYear = year;   
+                if(earliestDay > day){
+                    earliestMonth = month;
+                    earliestDay = day;
+                    earliestYear = year;
+                }
+            }
         }
-        else if(earliestMonth > month){
-            earliestMonth = month;
-            earliestDay = day;
-            earliestYear = year;   
-        }
-        else if(earliestDay > day){
-            earliestMonth = month;
-            earliestDay = day;
-            earliestYear = year;
+
+        if(earliestYear == year){
+            if(earliestMonth > month){
+                earliestMonth = month;
+                earliestDay = day;
+                earliestYear = year;
+                if(earliestDay > day){
+                    earliestMonth = month;
+                    earliestDay = day;
+                    earliestYear = year;
+                }
+            }   
         }
         printf("Enter a date (mm/dd/yy): ");
         scanf("%d/%d/%d", &month, &day, &year);
@@ -35,7 +49,4 @@ int main(void){
 }
 
 
-/*
 
-
-*/
