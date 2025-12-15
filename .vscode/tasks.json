@@ -6,30 +6,25 @@
             "type": "cppbuild",
             "label": "Build C Program (gcc)",
             "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
-
             "args": [
-                "-g",                       // include debug symbols
-                "-Wall",                    // show warnings
-                "-Wextra",                  // show extra warnings
+                "-g",
+                "-Wall",
+                "-Wextra",
                 "-fdiagnostics-color=always",
-                "${file}",                  // compile the current file
+                "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
-
             "options": {
-                "cwd": "${fileDirname}"     // run compiler in file's folder
+                "cwd": "${fileDirname}"
             },
-
             "problemMatcher": [
                 "$gcc"
             ],
-
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-
             "detail": "Custom GCC build task with debugging enabled."
         }
     ]
