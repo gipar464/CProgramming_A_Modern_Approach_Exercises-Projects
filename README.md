@@ -12,4 +12,4 @@ To debug, go to Terminal > Run Build Task. VSCode will automatically make a task
 things simpler for you. Now you can run and debug your code. 
 NOTE: YOU MUST HAVE THE MICROSOFT C/C++ EXTENSION IN VSCODE IN ORDER TO DEBUG THIS PROPERLY
 
-
+Tip: ctrl + alt + arrowkey up/down will allow for multiple cursors
