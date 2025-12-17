@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-    float n, e = 1.0f; //adding random comment (please delete later)
+    float n, e = 1.0f; 
 
     printf("Enter a number: ");
     scanf("%f", &n);
