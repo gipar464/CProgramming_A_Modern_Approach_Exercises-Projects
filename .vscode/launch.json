@@ -10,7 +10,7 @@
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
 
             "args": [],                   // no command-line args
-            "stopAtEntry": true,          // debugger stops at first line of main
+            "stopAtEntry": false,          // debugger stops at first line of main
             "cwd": "${fileDirname}",      // run inside source folder
             "environment": [],
             "externalConsole": false,     // use VS Code's integrated terminal
