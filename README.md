@@ -13,3 +13,8 @@ things simpler for you. Now you can run and debug your code.
 NOTE: YOU MUST HAVE THE MICROSOFT C/C++ EXTENSION IN VSCODE IN ORDER TO DEBUG THIS PROPERLY
 
 Tip: ctrl + alt + arrowkey up/down will allow for multiple cursors
+
+Challenging problems:
+    1) 6programmingProject11.c
+    2) 6programmingProject12.c
+
