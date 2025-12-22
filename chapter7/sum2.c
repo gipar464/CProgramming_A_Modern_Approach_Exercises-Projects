@@ -1,4 +1,5 @@
 /* Sums a series of numbers (using long variables) */
+/* 12/21/2025 */
 
 #include <stdio.h>
 
