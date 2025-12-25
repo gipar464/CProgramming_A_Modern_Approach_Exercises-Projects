@@ -1,8 +1,17 @@
+/* improved version of square2.c */
+
 #include <stdio.h>
 
-int main(void){    
-    printf("Hello, world\n");
-	printf("My name is Lia. Nice to meet you! :)\n"); 
-    return 0;
-}
+int main(void){
+	int i, n;
 
+	printf("This program prints a table of squares.\n");
+	printf("Enter a number of entries in table: ");
+	scanf("%d", &n);
+
+	for(i =1; i <=n; ++i){
+		printf("%10d%10d\n", i, i * i);
+	}
+
+	return 0;
+}
