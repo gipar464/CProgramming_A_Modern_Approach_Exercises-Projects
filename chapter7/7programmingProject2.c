@@ -11,11 +11,11 @@ int main(void){
 
 	for(i = 0; i < n; ++i){
 		printf("%10d%10d\n", i, i * i);
-		if(i % 24 == 0){
+		if((i % 24 == 0) && (i != 0)){
+			printf("Press ENTER to continue...\n");	
 			do{
-				printf("Press ENTER to continue...\n");
 				getchar();
-			} while(getchar() != '\n');	
+			} while(getchar() != '\n');
 		} 
 	}
 
