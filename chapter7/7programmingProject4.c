@@ -1,9 +1,6 @@
 /* Program that translates an alphabetic phone number into numeric form
  * 12/25/2025 (christmas day btw!) */
 
-// Enter a phone number: CALLATT
-// Output should be: 2255288
-
 #include <stdio.h>
 
 int main(void){
