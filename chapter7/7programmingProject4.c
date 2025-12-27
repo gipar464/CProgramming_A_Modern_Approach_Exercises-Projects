@@ -7,19 +7,85 @@
 #include <stdio.h>
 
 int main(void){
-    
     char ch;
-	printf("Enter phone number: ");
-    ch = getchar();
-    putchar(ch);
-    while(ch != '\n'){
-        ch = getchar();
-        putchar(ch);
-	}
+
+    printf("Enter phone number: ");
     
-    // probably use switch-case statements here or inside the while loop to convert the characters to numbers
+    do{
+        ch = getchar();
 
-
-
-	return 0;
+        switch(ch){
+            case 'A':
+            case 'a':
+            case 'B':
+            case 'b':
+            case 'C':
+            case 'c':
+                printf("2");
+                break;
+            case 'D':
+            case 'd':
+            case 'E':
+            case 'e':
+            case 'F':
+            case 'f':
+                printf("3");
+                break;
+            case 'G':
+            case 'g':
+            case 'H':
+            case 'I':
+            case 'i':
+                printf("4");
+                break;
+            case 'J':
+            case 'j':
+            case 'K':
+            case 'k':
+            case 'L':
+            case 'l':
+                printf("5");
+                break;
+            case 'M':
+            case 'm':
+            case 'N':
+            case 'n':
+            case 'O':
+            case 'o':
+                printf("6");
+                break;
+            case 'P':
+            case 'p':
+            case 'Q':
+            case 'q':
+            case 'R':
+            case 'r':
+            case 'S':
+            case 's':
+                printf("7");
+                break;
+            case 'T':
+            case 't':
+            case 'U':
+            case 'u':
+            case 'V':
+            case 'v':
+                printf("8");
+                break;
+            case 'W':
+            case 'w':
+            case 'X':
+            case 'x':
+            case 'Y':
+            case 'y':
+            case 'Z':
+            case 'z':
+                printf("9");
+                break;
+            default:
+                putchar(ch);
+        }
+    } while(ch != '\n'); 
+    
+    return 0;
 }
