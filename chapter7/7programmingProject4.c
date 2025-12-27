@@ -2,19 +2,23 @@
  * 12/25/2025 (christmas day btw!) */
 
 // Enter a phone number: CALLATT
-// 2255288
+// Output should be: 2255288
 
 #include <stdio.h>
 
 int main(void){
-
-	int number;
+    
+    char ch;
 	printf("Enter phone number: ");
-    number = getchar();
-	while(getchar() != '\n'){
-		number = getchar();
-		putchar(number);	
+    ch = getchar();
+    putchar(ch);
+    while(ch != '\n'){
+        ch = getchar();
+        putchar(ch);
 	}
+    
+    // probably use switch-case statements here or inside the while loop to convert the characters to numbers
+
 
 
 	return 0;
