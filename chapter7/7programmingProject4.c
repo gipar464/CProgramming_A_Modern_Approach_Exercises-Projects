@@ -10,6 +10,7 @@ int main(void){
 
 	int number;
 	printf("Enter phone number: ");
+    number = getchar();
 	while(getchar() != '\n'){
 		number = getchar();
 		putchar(number);	
