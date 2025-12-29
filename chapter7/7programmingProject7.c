@@ -8,12 +8,8 @@ int main(void){
     int resultNum, resultDenom; 
     char operation; 
     
-    printf("Enter your first fraction: ");
-    scanf("%d/%d", &num1, &denom1);
-    printf("Enter an operation: (*, /, +, -): ");
-    operation = getchar();
-    printf("Enter your section fraction: ");
-    scanf("%d/%d", &num2, &denom2);
+    printf("Enter a fraction separated by an operation (*, /, +, -): ");
+    scanf("%d/%d%c%d/%d", &num1, &denom1, &operation, &num2, &denom2);
 
     if(operation == '+'){
         resultNum = (num1 * denom2) + (denom1 * num2);
