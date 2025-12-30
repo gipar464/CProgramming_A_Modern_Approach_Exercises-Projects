@@ -25,12 +25,12 @@ int main(void){
         switch(timeSpecification){
             case 'A':
             case 'a':
-                printf("Equivalent 24-hour time: %d:%d\n", hours, minutes); 
+                printf("Equivalent 24-hour time: %2d:%2d\n", hours, minutes); 
                 return 0;
             case 'P':
             case 'p':
                 hours += 12;
-                printf("Equivalent 24-hour time: %d:%d\n", hours, minutes);
+                printf("Equivalent 24-hour time: %2d:%2d\n", hours, minutes);
                 return 0;
         } 
     } while(timeSpecification != '\n');
