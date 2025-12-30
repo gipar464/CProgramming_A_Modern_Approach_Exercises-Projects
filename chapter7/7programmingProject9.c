@@ -25,7 +25,10 @@ int main(void){
         switch(timeSpecification){
             case 'A':
             case 'a':
-                printf("Equivalent 24-hour time: %d:%.2d\n", hours, minutes); 
+                if(hours == 12){
+                    hours = 0;
+                }
+                printf("Equivalent 24-hour time: %.2d:%.2d\n", hours, minutes); 
                 return 0;
             case 'P':
             case 'p':
