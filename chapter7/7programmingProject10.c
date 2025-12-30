@@ -7,7 +7,7 @@
 
 int main(void){
     char ch; 
-    int len;
+    int len = 0;
 
     printf("Enter a sentence: ");
    
