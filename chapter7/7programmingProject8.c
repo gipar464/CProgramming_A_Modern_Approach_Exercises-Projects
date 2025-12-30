@@ -1,11 +1,12 @@
 /* 12/28/25 */
+/* does not currently check for errors */
 
 #include <stdio.h>
 #include <ctype.h>
 
 int main(void){
     int hours, minutes;    
-    
+    char timeSpecification; 
     do {
         printf("Enter a time: ");
         scanf("%d:%d", hours, minutes);
@@ -14,7 +15,20 @@ int main(void){
             printf("Enter a valid time using the 12-hour clock: ");
             scanf("%d:%d", hours, minutes);
         } else{
-            break; 
+            do{
+                timeSpecification = getchar();
+                switch(timeSpecification){
+                    case 'A':
+                    case 'a':
+                        if(//something) 
+                        break;
+                    case 'P':
+                    case 'p':
+                        //do something
+                        break;
+                }
+
+            } while(timeSpecification != '\n'); 
         }
 
     } while(1);
