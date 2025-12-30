@@ -9,23 +9,23 @@ int main(void){
     char timeSpecification; 
     do {
         printf("Enter a time: ");
-        scanf("%d:%d", hours, minutes);
+        scanf("%d:%d", &hours, &minutes);
        
         if(hours > 13 || hours < 0 || minutes > 60 || minutes < 0){
             printf("Enter a valid time using the 12-hour clock: ");
-            scanf("%d:%d", hours, minutes);
+            scanf("%d:%d", &hours, &minutes);
         } else{
             do{
                 timeSpecification = getchar();
                 switch(timeSpecification){
                     case 'A':
                     case 'a':
-                        if(//something) 
-                        break;
+                        printf("Time is in the morning.\n");
+                        return 0;
                     case 'P':
                     case 'p':
-                        //do something
-                        break;
+                        printf("Time is in the evening.\n");
+                        return 0;
                 }
 
             } while(timeSpecification != '\n'); 
@@ -33,5 +33,4 @@ int main(void){
 
     } while(1);
 
-    return 0;
 }
