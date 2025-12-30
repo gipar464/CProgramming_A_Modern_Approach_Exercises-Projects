@@ -57,7 +57,7 @@ int main(void){
                         if(convertedTime < (departureTime5 + departureTime4)/2){
                             printf("Closest departure time is 12:47 p.m., arriving 3:00 p.m.\n");
                         }
-                        if(convertedTime < (departureTime6 + departureTime5)/2){
+                        else if(convertedTime < (departureTime6 + departureTime5)/2){
                             printf("Closest departure time is 2:00 p.m., arriving 4:08 p.m.\n");
                         }
                         else if(convertedTime < (departureTime7 + departureTime6)/2){
