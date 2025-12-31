@@ -4,17 +4,24 @@
 #include <ctype.h>
 
 int main(void){
-    char ch; 
-
+    char ch, firstInitial; 
+    int counter = 0;
+    
     printf("Enter a first and last name: ");
     
-    ch = getchar();
-    while(ch != '\n'){
-        ch = getchar();
-        if(ch != ' '){
-            putchar(ch);
-        }
-    }
+    do{
+        firstInitial = getchar();
+        ++counter;
+    } while(counter < 1);
+   
+    printf("%c", firstInitial);
+
+    do{
+      ch = getchar();
+      if(ch != ' '){
+         putchar(ch);
+      }
+    }while(ch != '\n');
 
     return 0;
 }
