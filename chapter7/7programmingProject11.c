@@ -5,23 +5,24 @@
 
 int main(void){
     char ch, firstInitial; 
-    int counter = 0;
     
     printf("Enter a first and last name: ");
-    
+
+    // skips all the initial blank spaces at the beginning of the input, if any 
     do{
-        firstInitial = getchar();
-        ++counter;
-    } while(counter < 1);
-  
+        ch = getchar();
+        if(ch != ' '){
+            firstInitial = getchar();
+            break;
+        }
+    } while(ch == ' '); 
 
-
+    // skips the white space after the first name
     do{
         ch = getchar();
     } while(ch != ' ');
 
-   
-
+    // prints out the last name
     do{
       ch = getchar();
       if(ch != ' '){
