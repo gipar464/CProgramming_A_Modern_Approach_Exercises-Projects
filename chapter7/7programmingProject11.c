@@ -26,12 +26,11 @@ int main(void){
     do{
       ch = getchar();
       if(ch != ' '){
-         putchar(ch);
-      }
-      if(ch == '\n'){
-          printf(", %c.\n", firstInitial);
-      }
-    } while(ch != '\n');
+          putchar(ch);
+      } 
+    } while(ch >= 65 && ch <= 122);
+    
+    printf(", %c.\n", firstInitial);
     
 
     return 0;
