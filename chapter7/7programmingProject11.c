@@ -13,15 +13,25 @@ int main(void){
         firstInitial = getchar();
         ++counter;
     } while(counter < 1);
+  
+
+
+    do{
+        ch = getchar();
+    } while(ch != ' ');
+
    
-    printf("%c", firstInitial);
 
     do{
       ch = getchar();
       if(ch != ' '){
          putchar(ch);
       }
-    }while(ch != '\n');
+      if(ch == '\n'){
+          printf(", %c.\n", firstInitial);
+      }
+    } while(ch != '\n');
+    
 
     return 0;
 }
