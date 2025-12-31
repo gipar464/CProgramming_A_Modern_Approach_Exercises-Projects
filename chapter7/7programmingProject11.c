@@ -12,7 +12,7 @@ int main(void){
     do{
         ch = getchar();
         if(ch != ' '){
-            firstInitial = getchar();
+            firstInitial = ch;
             break;
         }
     } while(ch == ' '); 
