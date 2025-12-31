@@ -28,10 +28,10 @@ int main(void){
       if(ch != ' '){
           putchar(ch);
       } 
-    } while(ch >= 65 && ch <= 122);
+      else if(ch >= 65 && ch <= 122){
+          printf(", %c.\n", firstInitial);
+          return 0;
+      }
+    } while(1);
     
-    printf(", %c.\n", firstInitial);
-    
-
-    return 0;
 }
