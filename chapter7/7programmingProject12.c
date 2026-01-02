@@ -5,12 +5,13 @@
 
 int main(void){
     float o1, o2, result = 0.0f; //o1 & o2 == operand1 and operand2, respectively 
-    char ch, operation;
+    char operation;
 
     printf("Enter an expression: ");
-        
     do{
-        scanf("%f%c%f", &o1, &operation, &o2);
+        scanf("%f", &o1);
+        scanf("%c", &operation);
+        scanf("%f", &o2);
         if(operation == '*'){
             result += o1 * o2;    
         }
@@ -23,8 +24,7 @@ int main(void){
         else if(operation == '-'){
             result += o1 - o2;
         }
-        ch = getchar();
-    } while(ch != '\n');
+    } while(getchar() != '\n');
 
     printf("Value of epxression: %f", result);
     
