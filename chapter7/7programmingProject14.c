@@ -4,17 +4,18 @@
 #include <math.h>
 
 int main(void){
-    double x, y, result;
+    double x, y1, y2, result;
     
-    y = 1; //initial guess
+    y1 = (double)1.0; //initial guess
     printf("Enter a positive number: ");
     scanf("%lf", &x);
 
     do{
-        result = (y + (x/y)) / 2;
-        y = result;
-    } while(fabs((y - result)) >= (0.00001 * y));
+        y2 = (y1 + (x/y1)) / (double) 2;
+        y1 = y2;
+    } while(fabs((y1 - y2)) >= (0.00001 * y2));
     
+    result = y2;
     
     printf("Square root: %lf\n", result);
     return 0; 
