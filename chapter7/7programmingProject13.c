@@ -5,21 +5,24 @@
 int main(void){
     float average;
     char ch;
-    int wordCount = 0, letterCount = 0; 
+    int wordCount = 1, letterCount = 0; 
 
     printf("Enter a sentence: ");
     
-    while(1){
+    do{
         ch = getchar();
-        letterCount++;
-        if(ch == ' '){
-            wordCount++;
+        if(ch != ' ' && ch != '\n'){
+            ++letterCount;
+        }
+        else if(ch == ' '){
+            ++wordCount;
         }
         else if(ch == '\n'){
             break;
         }
-    }
+    } while(ch != '\n');
     
+    printf("%d %d\n", letterCount, wordCount);    
     average = (float)letterCount/wordCount; 
     printf("Average word length: %f.\n", average);
 
