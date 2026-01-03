@@ -3,15 +3,16 @@
 #include <stdio.h>
 
 int main(void){
-    char letter;
-
+    char letter, checker;
+    
     printf("Please enter a first and a last name: ");
     
-    while(getchar() != ' ');
-
     do{
-        scanf("%c", &letter);
-        printf("%c", letter);
+        scanf("%c", &checker);  //checks if letter scanned is white space or not. if yes, then it won't print anything 
+        if(checker != ' '){
+            letter = checker;
+            printf("%c", letter);
+        }
     } while(letter != '\n');
 
     return 0;
