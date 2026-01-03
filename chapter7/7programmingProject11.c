@@ -28,7 +28,7 @@ int main(void){
       if(ch != ' '){
           putchar(ch);
       } 
-    } while(ch != 003);
+    } while(ch != '\0'); 
    
    
     printf(", %c.\n", firstInitial);
