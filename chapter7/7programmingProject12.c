@@ -10,7 +10,7 @@ int main(void){
     char operator1, operator2;
 
     printf("Enter an expression: ");
-    scanf("%f%c%f%c%f", operand1, operator1, operand2, operator2, operand3);
+    scanf("%f%c%f%c%f", &operand1, &operator1, &operand2, &operator2, &operand3);
     
     switch(operator1){
         case '*':
