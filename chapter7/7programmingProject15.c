@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void){
-    int input, factorial = 0;
+    int input, factorial;
 
     printf("Enter a positive integer: ");
     do{
@@ -13,9 +13,11 @@ int main(void){
             scanf("%d", &input);
         }
     } while(input < 0);
+    
+    factorial = input;
 
-    for(int i = input; i > 0; --i){
-        factorial += factorial * i;
+    for(int i = input - 1; i > 0; --i){
+        factorial *= i;
     }
     
     printf("Factorial of %d: %d\n", input, factorial);
