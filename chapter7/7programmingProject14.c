@@ -1,4 +1,5 @@
 /* 01/02/2026 */
+/* Finds the square root of any number entered by the user using newton's method */
 
 #include <stdio.h>
 #include <math.h>
