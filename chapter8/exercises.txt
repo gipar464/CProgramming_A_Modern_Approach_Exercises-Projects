@@ -1,0 +1,8 @@
+// 01/07/2026
+
+1. i don't know
+2. Characters are just integers, right? So you can just use characters, but you'd probably have to-
+3. bool weekend[7] = {[0] = false, [6] = false} 
+4. same as 3
+5. 
+
