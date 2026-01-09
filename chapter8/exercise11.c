@@ -7,7 +7,7 @@ int main(void){
 
     for(int i = 0; i < 8; ++i){
         for(int j = 0; j < 8; ++j){
-            if(j % 2 == 0){
+            if((i + j) % 2 == 0){
                 checker_board[i][j] = '4';
             }
             else{
