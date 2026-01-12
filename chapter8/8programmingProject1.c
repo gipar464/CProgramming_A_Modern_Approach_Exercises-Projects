@@ -10,7 +10,8 @@ int main(void){
     bool digit_seen[10] = {false};
     int digit;
     long n;
-    int seen_numbers[10]; 
+    int seen_numbers[10]; // for digits 0-9:wq
+
 
     printf("Enter a number: ");
     scanf("%ld", &n);
