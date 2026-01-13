@@ -27,7 +27,7 @@ int main(void){
 
     if(i > 0){
         printf("Repeated digit(s): ");
-        for(int j = 0; j < i; ++j){
+        for(int j = i - 1; j >= 0; --j){
             printf("%d ", seen_numbers[j]);
         }
     }else{
