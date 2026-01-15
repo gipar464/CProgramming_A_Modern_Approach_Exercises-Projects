@@ -22,11 +22,15 @@ int main(void){
         digit_seen[digit] = true;
         n /= 10;
     }
-
+    
+    printf("Digit:");
     for(int i = 0; i < 10; ++i){
         printf(" %d", i);
     }
-
+    
+    printf("\n");
+    
+    printf("Occurrences:");
     for(int i = 0; i < 10; ++i){
         printf(" %d", occurence_list[i]);
     }
