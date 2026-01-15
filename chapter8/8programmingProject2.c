@@ -17,13 +17,13 @@ int main(void){
     while(n > 0){
         digit = n % 10;
         if(digit_seen[digit]){
-            ++occurence_list[n];
+            ++occurence_list[digit];
         }
         digit_seen[digit] = true;
         n /= 10;
     }
     
-    printf("Digit:       ");
+    printf("Digit:      ");
     for(int i = 0; i < 10; ++i){
         printf(" %d", i);
     }
