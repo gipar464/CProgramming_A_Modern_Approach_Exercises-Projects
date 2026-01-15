@@ -6,7 +6,6 @@
 #include <stdbool.h> /* C99 only */
 
 int main(void){
-    bool digit_seen[10] = {false};
     int digit;
     long n;
     int occurence_list[10] = {0}; // 10 for numbers 0 through 9
