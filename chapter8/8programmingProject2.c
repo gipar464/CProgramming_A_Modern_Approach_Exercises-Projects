@@ -7,9 +7,9 @@
 
 int main(void){
     bool digit_seen[10] = {false};
-    int digit, counter = 0;
+    int digit;
     long n;
-    int num_list[10];
+    int occurence_list[10] = {0}; // 10 for numbers 0 through 9
 
     printf("Enter a number: ");
     scanf("%ld", &n);
@@ -17,17 +17,18 @@ int main(void){
     while(n > 0){
         digit = n % 10;
         if(digit_seen[digit]){
-                     
-            ++counter;
+            ++occurence_list[n];
         }
         digit_seen[digit] = true;
         n /= 10;
     }
 
-    if(n > 0){
-        printf("Repeated digit\n");
-    }else{
-        printf("No repeated digit\n");
+    for(int i = 0; i < 10; ++i){
+        printf(" %d", i);
+    }
+
+    for(int i = 0; i < 10; ++i){
+        printf(" %d", occurence_list[i]);
     }
 
     return 0;
