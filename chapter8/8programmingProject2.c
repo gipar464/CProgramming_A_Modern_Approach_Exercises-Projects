@@ -23,7 +23,7 @@ int main(void){
         n /= 10;
     }
     
-    printf("Digit:");
+    printf("Digit:       ");
     for(int i = 0; i < 10; ++i){
         printf(" %d", i);
     }
