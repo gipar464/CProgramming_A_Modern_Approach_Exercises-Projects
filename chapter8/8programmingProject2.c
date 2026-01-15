@@ -16,10 +16,7 @@ int main(void){
 
     while(n > 0){
         digit = n % 10;
-        if(digit_seen[digit]){
-            ++occurence_list[digit];
-        }
-        digit_seen[digit] = true;
+        ++occurence_list[digit];
         n /= 10;
     }
     
