@@ -1,7 +1,7 @@
 /* Checks numbers for repeated digits 
  * 01/15/2026
  */
-
+//jut smth:
 #include <stdio.h>
 #include <stdbool.h> /* C99 only */
 
