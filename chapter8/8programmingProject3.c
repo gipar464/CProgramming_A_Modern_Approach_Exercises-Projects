@@ -19,19 +19,16 @@ int main(void){
     int digit;
     long n;
     int arrayLength = 0;
+    long user_list[arrayLength];
 
     do{
         printf("Enter a number: ");
         scanf("ld", &n);
-        ++arraylength;
+        user_list[arrayLength] = n;
+        ++arrayLength;
     } while(n > 0);
   
-    int user_list[arrayLength] = {0};
     
-    for(int i = 0; i < arraylength; ++i){
-        user_list[i] = 
-    }
-
     while(n > 0){
         digit = n % 10;
         if(digit_seen[digit]){
