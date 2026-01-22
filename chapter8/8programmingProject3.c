@@ -11,7 +11,6 @@
  *      6) if after every index of the array has been iterated and there hasn't been a repeated digit, then the program will end and say no repeated digit
  */
 
-
 #include <stdio.h>
 #include <stdbool.h> /* C99 only */
 
@@ -19,14 +18,19 @@ int main(void){
     bool digit_seen[10] = {false};
     int digit;
     long n;
-
-    printf("Enter a number: ");
-    scanf("%ld", &n);
+    int arrayLength = 0;
 
     do{
-        //last left off here 
+        printf("Enter a number: ");
+        scanf("ld", &n);
+        ++arraylength;
     } while(n > 0);
-
+  
+    int user_list[arrayLength] = {0};
+    
+    for(int i = 0; i < arraylength; ++i){
+        user_list[i] = 
+    }
 
     while(n > 0){
         digit = n % 10;
