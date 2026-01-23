@@ -20,3 +20,4 @@ Challenging problems:
     2) 6programmingProject12.c (currently unsolved)
     3) 7programmingProject11.c (solved + solution available in 7programmingProject11point2.c)
     4) 8programmingProject3.c (currently unsolved)
+    5) 8programmingProject5.c (currently unsolved)
