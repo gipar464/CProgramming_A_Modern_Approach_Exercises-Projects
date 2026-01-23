@@ -19,17 +19,20 @@ int main(void){
     int digit;
     long n;
     int arrayLength = 0;
+    long user_list[arrayLength]; 
 
     do{
         printf("Enter a number: ");
         scanf("ld", &n);
+        user_list[arrayLength] = n;
         ++arrayLength;
     } while(n > 0);
   
-    long user_list[arrayLength];
-    
+    for(int i = 0; i < arrayLength; ++i){
+       printf("%ld", user_list[i]); 
+    }
            
-
+/*
     while(n > 0){
         digit = n % 10;
         if(digit_seen[digit]){
@@ -44,6 +47,6 @@ int main(void){
     }else{
         printf("No repeated digit\n");
     }
-
+*/
     return 0;
 }
