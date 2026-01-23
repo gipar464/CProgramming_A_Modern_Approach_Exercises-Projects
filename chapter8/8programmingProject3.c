@@ -28,7 +28,7 @@ int main(void){
   
     long user_list[arrayLength];
     
-    
+           
 
     while(n > 0){
         digit = n % 10;
